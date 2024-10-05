@@ -89,6 +89,21 @@ a:hover {
     gap: 10px; 
 }
 
+.code-image {
+    width: 100%;=
+    max-width: 300px;
+    height: auto; /
+}
+
+.text-image-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 20px; 
+    margin: 20px 0;
+}
+
+
 
 @media (min-width: 768px) {
     header {
@@ -122,5 +137,22 @@ a:hover {
         justify-content: flex-end; 
         gap: 20px; 
         margin-left: auto;
+    }
+
+    .text-image-container {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    .code-image {
+        width: auto;
+        max-width: 300px; 
+        margin-left: 20px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .code-image {
+        display: none; 
     }
 }
